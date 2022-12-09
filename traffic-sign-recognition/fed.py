@@ -13,6 +13,9 @@ from models.Nets import LeNet
 from models.Federated import FedAvg
 from models.evaluate import evaluate
 import data_loading as dataset
+import time
+
+
 
 
 def get_train_valid_loader(data_dir,
@@ -37,6 +40,7 @@ def get_train_valid_loader(data_dir,
     return dataset_train, dataset_test
 
 if __name__ == '__main__':
+    start_time = time.time()
     # parse args
     args = args_parser()
     args.device = torch.device('cuda:{}'.format(args.gpu) if torch.cuda.is_available() and args.gpu != -1 else 'cpu')
@@ -112,3 +116,4 @@ if __name__ == '__main__':
     print("Training accuracy: {:.2f}".format(acc_train))
     print("Testing accuracy: {:.2f}".format(acc_test))
 
+    print("--- %s seconds ---" % (time.time() - start_time))
