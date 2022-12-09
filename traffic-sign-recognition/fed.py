@@ -82,7 +82,7 @@ if __name__ == '__main__':
     log.write('\nNum local epochs: {}'.format(args.local_ep))
     log.write('\nNum of clients: {}'.format(args.num_users))
     log.write('\nThe fraction of clients: C: {}'.format(args.frac))
-    log.write('\nAll clients:  {}'.format(args.frac))
+    log.write('\nAll clients:  {}'.format(args.all_clients))
 
     
     if args.all_clients:
