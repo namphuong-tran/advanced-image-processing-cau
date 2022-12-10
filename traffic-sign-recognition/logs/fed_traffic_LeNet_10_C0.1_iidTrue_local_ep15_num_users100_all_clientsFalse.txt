@@ -1,0 +1,19 @@
+Model: LeNet
+Num epochs: 10
+Num local epochs: 15
+Num of clients: 100
+The fraction of clients: C: 0.1
+All clients:  False
+Round   0, Average loss 4.104
+Round   1, Average loss 4.046
+Round   2, Average loss 3.887
+Round   3, Average loss 3.689
+Round   4, Average loss 3.567
+Round   5, Average loss 3.438
+Round   6, Average loss 3.406
+Round   7, Average loss 3.348
+Round   8, Average loss 3.315
+Round   9, Average loss 3.303
+Training accuracy: 12.75
+Testing accuracy: 11.77
+--- 172.6933343410492 seconds ---
